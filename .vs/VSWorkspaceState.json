@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\doc",
     "\\assets\\icon",
     "\\assets\\img",
     "\\css",
     "\\js"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\assets\\icon\\sql.png",
   "PreviewInSolutionExplorer": false
 }
