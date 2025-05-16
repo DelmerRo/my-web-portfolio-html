@@ -102,4 +102,103 @@ Estoy **disponible para trabajar en cualquier sector tecnológico** y me adapto 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tu_perfil_de_linkedin)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:delmer.rodriguez.it@gmail.com)
 
-¡Gracias por visitar mi perfil! Estoy emocionado por las futuras oportunidades y desafíos que pueda enfrentar.
+<details>
+  <summary>📄 Ver CV en formato JSON</summary>
+
+```json
+{
+  "nombre": "Delmer Rodríguez",
+  "titulo": "Analista de Sistemas | Desarrollador Backend",
+  "contacto": {
+    "telefono": "+54 9 11 2254 0454",
+    "email": "delmer.rodriguez.it@gmail.com",
+    "ubicacion": "Buenos Aires, Argentina"
+  },
+  "perfil_profesional": "Desarrollador backend con conocimientos en Java, C# y bases de datos, en busca de una oportunidad en una empresa tecnológica que valore la innovación. Mi objetivo es contribuir a proyectos que promuevan el desarrollo sostenible y la optimización de procesos mediante software eficiente y escalable. Disponible para trabajar en cualquier sector tecnológico y en cualquier modalidad.",
+  "habilidades": {
+    "tecnicas": [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "C#",
+      "ASP.NET",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQL Server",
+      "Power BI",
+      "Patrones de Diseño"
+    ],
+    "herramientas_y_metodologias": [
+      "Agile",
+      "Scrum",
+      "Trello",
+      "Git",
+      "GitHub"
+    ],
+    "habilidades_blandas": [
+      "Comunicación efectiva",
+      "Gestión del tiempo",
+      "Trabajo en equipo"
+    ]
+  },
+  "experiencia": [
+    {
+      "empresa": "NoCountry",
+      "cargo": "Programador Backend - PM",
+      "periodo": "Diciembre 2024 - Presente",
+      "responsabilidades": [
+        "Desarrollo de aplicaciones web utilizando Java Spring Boot, SQL, JavaMailSender y APIs externas.",
+        "Gestión de equipos en servicio técnico, implementación de sistema de órdenes de trabajo y reportes.",
+        "Desarrollo de una plataforma financiera con notificaciones en tiempo real e integración de APIs."
+      ]
+    },
+    {
+      "empresa": "Coto C.I.C.S.A",
+      "cargo": "Vendedor de Electrodomésticos",
+      "periodo": "Enero 2017 - Julio 2023",
+      "responsabilidades": [
+        "Especialista en ventas, gestión de inventario y garantías extendidas.",
+        "Atención personalizada y resolución de incidencias para mejorar la experiencia del cliente."
+      ]
+    },
+    {
+      "empresa": "Coto C.I.C.S.A",
+      "cargo": "Encargado de salón de ventas",
+      "periodo": "Marzo 2014 - Enero 2017",
+      "responsabilidades": [
+        "Coordinación de logística y liderazgo de equipo.",
+        "Optimización de rotación de stock y uso de herramientas como Excel para control y reportes."
+      ]
+    }
+  ],
+  "formacion": [
+    {
+      "titulo": "Licenciatura en Tecnologías Digitales",
+      "institucion": "Universidad de la Ciudad de Buenos Aires",
+      "periodo": "Agosto 2024 - Presente"
+    },
+    {
+      "titulo": "Java Developer Engineer",
+      "institucion": "EducaciónIT",
+      "periodo": "Abril 2024 - Diciembre 2024",
+      "detalle": "Cursos: Java Standard Web Programming, Hibernate, Spring Boot"
+    },
+    {
+      "titulo": "Git: Desarrollo Colaborativo",
+      "institucion": "EducaciónIT",
+      "periodo": "Agosto 2024 - Septiembre 2024"
+    },
+    {
+      "titulo": "Analista de Sistemas",
+      "institucion": "Instituto de Tecnología ORT",
+      "periodo": "Julio 2020 - Julio 2023"
+    }
+  ],
+  "idiomas": [
+    {
+      "idioma": "Inglés",
+      "nivel": "Básico (A2)"
+    }
+  ]
+}
