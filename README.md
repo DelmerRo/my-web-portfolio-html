@@ -16,7 +16,7 @@
 Mi formación combina **tecnología, negocio y gestión de proyectos**, lo que me da una perspectiva completa que me permite entender los proyectos de principio a fin. Me enfoco en conectar la parte técnica con las necesidades reales del problema, asegurando que mi contribución sume valor en cada etapa.
 
 **Actualmente disponible para oportunidades como:**
-- **Full Stack Developer** (Spring Boot, NestJS, React, Next.js)
+- **Full Stack Developer** (Spring Boot, React)
 - **Analista de Sistemas** (Análisis de requerimientos, diseño de arquitectura)
 - **Backend Developer** (APIs REST, integraciones, fintech)
 
