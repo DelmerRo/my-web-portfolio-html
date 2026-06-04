@@ -43,3 +43,53 @@ document.addEventListener("DOMContentLoaded", function () {
         }, index * 500); // Ajusta el tiempo según tus necesidades
     });
 });
+
+// Función para copiar al portapapeles con toast mejorado
+function copyToClipboard(text, label) {
+    navigator.clipboard.writeText(text).then(function() {
+        const toast = document.createElement('div');
+        toast.className = 'copy-toast';
+        toast.innerHTML = `<i class="fas fa-check-circle me-2" style="color: #25d366;"></i>${label} copiado: ${text}`;
+        document.body.appendChild(toast);
+        
+        setTimeout(function() {
+            toast.remove();
+        }, 1800);
+    }).catch(function() {
+        // Fallback para navegadores antiguos
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        
+        const toast = document.createElement('div');
+        toast.className = 'copy-toast';
+        toast.innerHTML = `<i class="fas fa-check-circle me-2"></i>${label} copiado`;
+        document.body.appendChild(toast);
+        setTimeout(function() {
+            toast.remove();
+        }, 1800);
+    });
+}
+
+// Función para descargar CV con tracking sutil
+function descargarCV() {
+    const cvUrl = 'assets/doc/CV - Delmer Rodríguez - Sistemas.pdf';
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'CV_Delmer_Rodriguez_Backend.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Opcional: pequeño toast de confirmación
+    const toast = document.createElement('div');
+    toast.className = 'copy-toast';
+    toast.innerHTML = `<i class="fas fa-download me-2" style="color: #25d366;"></i>Descargando CV...`;
+    document.body.appendChild(toast);
+    setTimeout(function() {
+        toast.remove();
+    }, 1500);
+}

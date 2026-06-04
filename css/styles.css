@@ -10970,3 +10970,276 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* Barra de contacto horizontal premium */
+.contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    padding: 0.75rem 1.5rem;
+    border-radius: 60px;
+    margin: 1rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    background: white;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 0.85rem;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    border-color: transparent;
+}
+
+.contact-btn i:first-child {
+    font-size: 1rem;
+}
+
+.copy-icon {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    transition: all 0.2s;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.contact-btn:hover .copy-icon {
+    opacity: 1;
+    background: rgba(0,0,0,0.05);
+}
+
+/* Badges de experiencia mejorados */
+.badge-exp {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+}
+
+.badge-exp-blue {
+    background: linear-gradient(135deg, #e3f2fd, #bbdef5);
+    color: #1565c0;
+    border-left: 3px solid #1976d2;
+}
+
+.badge-exp-green {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    color: #2e7d32;
+    border-left: 3px solid #388e3c;
+}
+
+.badge-exp-purple {
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    color: #7b1fa2;
+    border-left: 3px solid #8e24aa;
+}
+
+/* Iconos sociales premium a color */
+.social-premium {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-start;
+    border-top: 2px solid linear-gradient(90deg, #e9ecef, transparent);
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.social-premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #007bff, transparent);
+}
+
+.social-icon-premium {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.social-icon-premium:hover {
+    transform: scale(1.1) translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Colores específicos por red social */
+.social-icon-premium.linkedin {
+    color: #0077b5;
+    background: #eef4fa;
+}
+.social-icon-premium.linkedin:hover {
+    background: #0077b5;
+    color: white;
+}
+
+.social-icon-premium.github {
+    color: #333;
+    background: #f0f0f0;
+}
+.social-icon-premium.github:hover {
+    background: #24292e;
+    color: white;
+}
+
+.social-icon-premium.email {
+    color: #ea4335;
+    background: #feeae8;
+}
+.social-icon-premium.email:hover {
+    background: #ea4335;
+    color: white;
+}
+
+.social-icon-premium.cv {
+    color: #dc3545;
+    background: #fee8ea;
+}
+.social-icon-premium.cv:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.social-icon-premium.whatsapp {
+    color: #25d366;
+    background: #e8f5e9;
+}
+.social-icon-premium.whatsapp:hover {
+    background: #25d366;
+    color: white;
+}
+
+/* Tooltip para iconos sociales */
+.social-tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.social-icon-premium:hover .social-tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: -35px;
+}
+
+/* Frase de impacto */
+.impact-quote {
+    font-size: 0.85rem;
+    font-style: italic;
+    padding: 0.5rem 0;
+    border-left: 3px solid #007bff;
+    padding-left: 1rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.impact-quote:hover {
+    opacity: 1;
+}
+
+/* Toast de copiado */
+.copy-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    z-index: 9999;
+    animation: fadeInOut 1.8s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    15% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    85% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .contact-bar {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 28px;
+        padding: 1rem;
+    }
+    
+    .contact-btn {
+        justify-content: center;
+    }
+    
+    .social-premium {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .social-icon-premium {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+    
+    .badge-exp {
+        display: block;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        width: fit-content;
+    }
+    
+    .impact-quote {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+}
+

@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Acerca de mí</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia Laboral</a>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia Profesional</a>
                 </li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formación Academica</a>
                 </li>
@@ -47,231 +47,461 @@
 
         <!-- About-->
         <section class="resume-section" id="about">
-    <div class="resume-section-content">
-        <h1 class="mb-0">
-            Rodríguez
-            <span class="text-primary">Delmer</span>
-        </h1>
-        <h3 class="mb-0">
-            Full Stack Developer Jr | React & Spring Boot
-        </h3>
-        <p class="lead mt-1">
-            Analista de Sistemas | Licenciado en Tecnologías Digitales
-        </p>
-        <p class="lead mt-2">
-            Mi formación combina tecnología, negocio y gestión de proyectos, lo que me da una perspectiva completa para entender el ciclo de vida del desarrollo, desde el código hasta la entrega final.
-        </p>
-        <p class="lead mt-2">
-            En la práctica, conecto la parte técnica con las necesidades del negocio. Me enfoco en entender el "por qué" detrás de cada funcionalidad para asegurar que mi trabajo sume valor en cada etapa.
-        </p>
-        <div class="social-icons" style="visibility: hidden;">
-            <!-- Tus iconos sociales aquí -->
-        </div>
-    </div>
-</section>
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Rodríguez
+                    <span class="text-primary">Delmer</span>
+                </h1>
+                <h3 class="mb-3">
+                    Analista de Sistemas | Backend Developer | Especialista en Procesos Comerciales
+                </h3>
+
+                <!-- Línea de contacto horizontal con funcionalidades mejorada -->
+                <div class="contact-bar mb-4">
+                    <div class="contact-btn"
+                        onclick="window.location.href='https://maps.google.com/?q=Buenos+Aires+Argentina'"
+                        title="Ver en mapa">
+                        <i class="fas fa-map-marker-alt" style="color: #ea4335;"></i>
+                        <span>Buenos Aires, Argentina</span>
+                    </div>
+
+                    <div class="contact-btn" onclick="window.location.href='tel:+5491122540454'" title="Llamar ahora">
+                        <i class="fas fa-phone" style="color: #34a853;"></i>
+                        <span>(+54 9) 11 2254-0454</span>
+                        <i class="fas fa-copy text-muted ms-1 copy-icon"
+                            onclick="event.stopPropagation(); copyToClipboard('(+54 9) 11 2254-0454', 'Teléfono')"
+                            title="Copiar número"></i>
+                    </div>
+
+                    <div class="contact-btn" onclick="window.location.href='mailto:jindrg@gmail.com'"
+                        title="Enviar email">
+                        <i class="fas fa-envelope" style="color: #4285f4;"></i>
+                        <span>jindrg@gmail.com</span>
+                        <i class="fas fa-copy text-muted ms-1 copy-icon"
+                            onclick="event.stopPropagation(); copyToClipboard('jindrg@gmail.com', 'Email')"
+                            title="Copiar email"></i>
+                    </div>
+                </div>
+
+                <!-- Textos de perfil con badges mejorados -->
+                <div class="profile-texts">
+                    <p class="lead mt-2">
+                        <span class="badge-exp badge-exp-blue">14+ años</span>
+                        <strong>Analista de Sistemas</strong> y Desarrollador Backend con más de 14 años de experiencia
+                        en retail, operaciones comerciales, logística e inventarios. Mi trayectoria me permitió
+                        comprender en profundidad procesos de gestión de stock, recepción de mercadería, ventas y
+                        coordinación operativa.
+                    </p>
+
+                    <p class="lead mt-3">
+                        <span class="badge-exp badge-exp-green">Full Stack</span>
+                        Complementé esa experiencia con formación en sistemas y desarrollo de software, lo que me
+                        permite entender tanto las necesidades del negocio como las soluciones tecnológicas que las
+                        respaldan. Actualmente gestiono un ecommerce propio y desarrollé desde cero el sistema utilizado
+                        para administrar su operación diaria.
+                    </p>
+
+                    <p class="lead mt-3">
+                        <span class="badge-exp badge-exp-purple">🎯 Valor Diferencial</span>
+                        Mi principal fortaleza es combinar conocimiento operativo real y capacidad técnica para
+                        transformar problemas de negocio concretos en soluciones de software funcionales.
+                    </p>
+                </div>
+
+                <!-- Iconos sociales a color con efectos premium -->
+                <div class="social-premium mt-4 pt-2">
+                    <a href="https://linkedin.com/in/delmer-rodriguez" target="_blank"
+                        class="social-icon-premium linkedin" title="LinkedIn - Conectemos profesionalmente">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/delmerro" target="_blank" class="social-icon-premium github"
+                        title="GitHub - Explora mi código">
+                        <i class="fab fa-github"></i>
+                        <span class="social-tooltip">GitHub</span>
+                    </a>
+                    <a href="mailto:jindrg@gmail.com" class="social-icon-premium email" title="Email profesional">
+                        <i class="fas fa-envelope"></i>
+                        <span class="social-tooltip">Email</span>
+                    </a>
+                    <a href="#" class="social-icon-premium cv" title="Descargar CV PDF"
+                        onclick="descargarCV(); return false;">
+                        <i class="fas fa-file-pdf"></i>
+                        <span class="social-tooltip">Descargar CV</span>
+                    </a>
+                    <a href="https://wa.me/5491122540454" target="_blank" class="social-icon-premium whatsapp"
+                        title="WhatsApp - Contacto directo">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="social-tooltip">WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Frase de impacto / Call to action sutil -->
+                <div class="impact-quote mt-4">
+                    <i class="fas fa-quote-left me-2" style="color: #007bff; opacity: 0.5;"></i>
+                    <span class="text-muted">"De la operación al código: transformo necesidades reales en soluciones
+                        tecnológicas"</span>
+                </div>
+            </div>
+        </section>
         <hr class="m-0" />
 
         <!-- Experience-->
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
-                <h2 class="mb-3">Experiencia</h2>
+                <h2 class="mb-4">Experiencia Profesional</h2>
 
-                <!-- Sección Experiencia - Portfolio -->
+                <!-- Desarrollador IT & Administrador de E-commerce -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Desarrollador IT & Administrador de E-commerce</h3>
+                        <div class="subheading mb-3">Utama Home & Deco (Emprendimiento propio)</div>
 
-                <div class="resume-section-content">
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Gestión Integral del Negocio</h4>
+                                <div>
+                                    <span class="badge bg-primary me-1">E-commerce</span>
+                                    <span class="badge bg-success me-1">Power BI</span>
+                                    <span class="badge bg-info">Automatización</span>
+                                </div>
+                            </div>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>Sistema de Inventario:</strong> Diseño, desarrollo y despliegue
+                                    en producción de un sistema de gestión de inventario y compras para administrar la
+                                    operación diaria.</li>
+                                <li class="mb-2"><strong>Automatización:</strong> Implementación de procesos de
+                                    recepción, conciliación de órdenes y automatización de reportes de diferencias de
+                                    stock.</li>
+                                <li class="mb-2"><strong>Gestión Fiscal:</strong> Gestión operativa integral del
+                                    negocio, incluyendo estructuración y registro fiscal digital ante ARCA.</li>
+                                <li class="mb-2"><strong>Análisis de Datos:</strong> Análisis de métricas y rentabilidad
+                                    mediante Power BI, centralizando procesos para reducir errores operativos.</li>
+                            </ul>
+                            <a href="#proyecto-inventory" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Ver Proyecto Detallado
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Octubre 2025 - Presente</span></div>
+                </div>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Desarrollador Full Stack & Analista Técnico</h3>
-                            <div class="subheading mb-3">No Country · Desarrollo de Proyectos Completos</div>
+                <!-- Reconversión Profesional — Formación y Proyectos IT -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Reconversión Profesional — Formación y Proyectos IT</h3>
+                        <div class="subheading mb-3">Formación independiente</div>
 
-                            <!-- Proyecto 1: TestiGo -->
-                            <div class="project-card mb-4 p-4 border rounded">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h4 class="mb-0 text-primary">TestiGo – CMS de Testimonios</h4>
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Transición al Desarrollo de Software</h4>
+                                <div>
+                                    <span class="badge bg-primary me-1">Full Stack</span>
+                                    <span class="badge bg-success me-1">Java</span>
+                                    <span class="badge bg-info">Spring Boot</span>
+                                </div>
+                            </div>
+                            <p class="mb-3 text-muted">Período de transición profesional dedicado full time a la
+                                formación en sistemas y al desarrollo de proyectos IT.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>Formación Académica:</strong> Finalización de la carrera
+                                    Analista de Sistemas (Instituto de Tecnología ORT) e inicio de la Licenciatura en
+                                    Tecnologías Digitales (UNICABA).</li>
+                                <li class="mb-2"><strong>Certificación:</strong> Certificación Java Developer Engineer
+                                    en EducaciónIT: Java Standard Web Programming, Hibernate, Spring Boot.</li>
+                                <li class="mb-2"><strong>Proyectos Colaborativos:</strong> Participación en proyectos IT
+                                    colaborativos con equipos multidisciplinarios mediante No Country.</li>
+                                <li class="mb-2"><strong>Desarrollo Propio:</strong> Desarrollo del sistema de gestión
+                                    de inventario y compras previo al lanzamiento formal del ecommerce.</li>
+                            </ul>
+                            <a href="#proyecto-inventory" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Ver Proyecto Detallado
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Mayo 2023 - Octubre 2025</span></div>
+                </div>
+
+                <!-- Desarrollador Backend & Analista Técnico -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Desarrollador Backend & Analista Técnico</h3>
+                        <div class="subheading mb-3">No Country · Programa de Desarrollo Profesional IT</div>
+
+                        <!-- Proyecto: Startup CRM Cross-Industry -->
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Startup CRM Cross-Industry</h4>
+                                <div>
+                                    <span class="badge bg-primary me-1">Full Stack</span>
+                                    <span class="badge bg-warning text-dark me-1">API Integration</span>
+                                    <span class="badge bg-info">Real Metrics</span>
+                                </div>
+                            </div>
+                            <p class="mb-3"><strong>Contribución principal:</strong> Implementé la lógica para asociar
+                                todas las interacciones de WhatsApp y Email a un mismo contacto, manteniendo un
+                                historial único y completo de cada cliente.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>Unificación de Comunicación:</strong> Diseñé la lógica que
+                                    vincula automáticamente interacciones de WhatsApp y Email al mismo contacto,
+                                    preservando el historial completo de cada cliente.</li>
+                                <li class="mb-2"><strong>Integraciones Externas:</strong> Implementé conexión con
+                                    WhatsApp Cloud API y Brevo (Email) para comunicación unificada.</li>
+                                <li class="mb-2"><strong>Lógica de Negocio:</strong> Construí sistema de funnels
+                                    comerciales con tracking de leads (NEW_LEAD → CONTACTED → IN_NEGOTIATION → CLOSED).
+                                </li>
+                                <li class="mb-2"><strong>Métricas en Tiempo Real:</strong> Desarrollé sistema de cálculo
+                                    de métricas dinámicas sin persistencia para mantener consistencia.</li>
+                                <li class="mb-2"><strong>Seguridad:</strong> Implementé JWT con roles (admin/vendedor) y
+                                    validaciones backend para control de acceso.</li>
+                            </ul>
+                            <a href="#proyecto-crm" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Ver Proyecto Detallado
+                            </a>
+                        </div>
+
+                        <!-- Proyecto: TestiGo -->
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">TestiGo – CMS de Testimonios</h4>
+                                <div>
+                                    <span class="badge bg-primary me-1">Full Stack</span>
+                                    <span class="badge bg-success me-1">NestJS</span>
+                                    <span class="badge bg-info">Next.js</span>
+                                </div>
+                            </div>
+                            <p class="mb-3"><strong>Contribución principal:</strong> Implementé desde cero el esquema de
+                                roles y permisos, desarrollé la API pública de testimonios y colaboré en el dashboard
+                                administrativo.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>Backend:</strong> Implementé el sistema de roles y permisos
+                                    (Admin/Moderador/Usuario) desde cero, aprendiendo NestJS durante el desarrollo.</li>
+                                <li class="mb-2"><strong>API Design:</strong> Diseñé y desarrollé la API REST pública
+                                    para consumo de testimonios, dominando TypeScript en el proceso.</li>
+                                <li class="mb-2"><strong>Frontend:</strong> Construí componentes del dashboard de
+                                    creación de testimonios con Next.js, un framework nuevo para mí.</li>
+                                <li class="mb-2"><strong>Documentación:</strong> Documenté todos los endpoints con
+                                    Swagger/OpenAPI.</li>
+                                <li class="mb-2"><strong>DevOps:</strong> Participé en la configuración del deploy a
+                                    producción, implementando un flujo de CI/CD desde cero.</li>
+                            </ul>
+                            <a href="#proyecto-testigo" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Ver Proyecto Detallado
+                            </a>
+                        </div>
+
+                        <!-- Proyecto: CreditFlow -->
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">CreditFlow – Plataforma Fintech</h4>
+                                <div>
+                                    <span class="badge bg-success me-1">Backend</span>
+                                    <span class="badge bg-warning text-dark me-1">BCRA API</span>
+                                    <span class="badge bg-danger">KYC Ready</span>
+                                </div>
+                            </div>
+                            <p class="mb-3"><strong>Contribución principal:</strong> Desarrollé la integración con
+                                servicios del BCRA para validación de CUIT y consulta de información financiera.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>API Development:</strong> Desarrollé desde cero las APIs REST
+                                    para registro y validación de empresas.</li>
+                                <li class="mb-2"><strong>Integración BCRA:</strong> Implementé la conexión con APIs del
+                                    BCRA para verificación de datos y consulta de información financiera en procesos de
+                                    evaluación crediticia.</li>
+                                <li class="mb-2"><strong>Documentación:</strong> Documenté todos los endpoints con
+                                    Swagger/OpenAPI.</li>
+                                <li class="mb-2"><strong>Seguridad:</strong> Diseñé la arquitectura pensando en futuras
+                                    integraciones KYC.</li>
+                            </ul>
+                            <a href="#proyecto-creditflow" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Ver Proyecto Detallado
+                            </a>
+                        </div>
+
+                        <!-- Proyecto: Plataforma Web Empresarial -->
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Plataforma Web Empresarial</h4>
+                                <div>
+                                    <span class="badge bg-info me-1">AI Integration</span>
+                                    <span class="badge bg-success me-1">OpenAI</span>
+                                    <span class="badge bg-secondary">Automation</span>
+                                </div>
+                            </div>
+                            <p class="mb-3"><strong>Contribución principal:</strong> Diseñé e implementé un sistema
+                                automatizado de procesamiento de videos con la API de OpenAI.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>Automatización:</strong> Analicé, diseñé e implementé un flujo
+                                    completo de procesamiento de videos.</li>
+                                <li class="mb-2"><strong>OpenAI Integration:</strong> Integré la API de OpenAI para
+                                    transcribir audio y traducir subtítulos de inglés a español.</li>
+                                <li class="mb-2"><strong>Optimización:</strong> Implementé manejo de rate limits y caché
+                                    para eficiencia de costos.</li>
+                                <li class="mb-2"><strong>Documentación:</strong> Documenté todos los endpoints con
+                                    Swagger/OpenAPI.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Proyecto: Wallex -->
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Wallex – Sistema Financiero</h4>
+                                <div>
+                                    <span class="badge bg-warning text-dark me-1">Refactoring</span>
+                                    <span class="badge bg-info me-1">Core Services</span>
                                     <span class="badge bg-primary">Full Stack</span>
                                 </div>
-                                <p class="mb-3"><strong>Mi contribución principal:</strong> Responsable del módulo de
-                                    seguridad y la API pública, <strong>adaptándome rápidamente al stack tecnológico
-                                        (NestJS/Next.js).</strong></p>
-                                <ul class="mb-0">
-                                    <li><strong>Backend:</strong> Implementé el sistema de roles y permisos
-                                        (Admin/Moderador/Usuario) desde cero, aprendiendo NestJS durante el desarrollo.
-                                    </li>
-                                    <li><strong>API Design:</strong> Diseñé y desarrollé la API REST pública para
-                                        consumo de testimonios, dominando TypeScript en el proceso.</li>
-                                    <li><strong>Frontend:</strong> Construí componentes del dashboard de creación de
-                                        testimonios con Next.js, un framework nuevo para mí.</li>
-                                    <li><strong>Documentación:</strong> Documenté todos los endpoints con
-                                        Swagger/OpenAPI.</li>
-                                    <li><strong>DevOps:</strong> Participé en el strategy y configuración del deploy a
-                                        producción, implementando un flujo de CI/CD desde cero.</li>
-                                </ul>
                             </div>
-
-                            <!-- Proyecto 2: CreditFlow -->
-                            <div class="project-card mb-4 p-4 border rounded">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h4 class="mb-0 text-primary">CreditFlow – Plataforma Fintech</h4>
-                                    <span class="badge bg-success">Backend Specialist</span>
-                                </div>
-                                <p class="mb-3"><strong>Mi contribución principal:</strong> Desarrollo completo del
-                                    módulo de onboarding PYMEs</p>
-                                <ul class="mb-0">
-                                    <li><strong>API Development:</strong> Desarrollé desde cero las APIs REST para
-                                        registro y validación de empresas</li>
-                                    <li><strong>Integración BCRA:</strong> Implementé la conexión con APIs del BCRA
-                                        para verificación de datos</li>
-                                    <li><strong>Documentación:</strong> Documenté todos los endpoints con
-                                        Swagger/OpenAPI</li>
-                                    <li><strong>Seguridad:</strong> Diseñé la arquitectura pensando en futuras
-                                        integraciones KYC</li>
-                                </ul>
-                            </div>
-
-                            <!-- Proyecto 3: Plataforma Web -->
-                            <div class="project-card mb-4 p-4 border rounded">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h4 class="mb-0 text-primary">Plataforma Web Empresarial</h4>
-                                    <div>
-                                        <span class="badge bg-info">AI Integration</span>
-                                        <span class="badge bg-success">Backend Specialist</span>
-                                    </div>
-                                </div>
-                                <p class="mb-3"><strong>Mi contribución principal:</strong> Sistema automatizado de
-                                    subtitulado con IA</p>
-                                <ul class="mb-0">
-                                    <li><strong>Automatización:</strong> Analicé, diseñé e implementé un flujo
-                                        completo de procesamiento de videos</li>
-                                    <li><strong>OpenAI Integration:</strong> Integré la API de OpenAI para
-                                        transcribir audio y <strong>traducir subtítulos de inglés a español</strong>
-                                    </li>
-                                    <li><strong>Optimización:</strong> Implementé manejo de rate limits y caché para
-                                        eficiencia de costos</li>
-                                    <li><strong>Documentación:</strong> Documenté todos los endpoints con
-                                        Swagger/OpenAPI</li>
-                                </ul>
-                            </div>
-
-                            <!-- Proyecto 4: Wallex -->
-                            <div class="project-card mb-4 p-4 border rounded">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h4 class="mb-0 text-primary">Wallex – Sistema Financiero</h4>
-                                    <div>
-                                        <span class="badge bg-warning text-dark me-1">Core Services</span>
-                                        <span class="badge bg-info me-1">Refactoring</span>
-                                        <span class="badge bg-success">Full Stack</span>
-                                    </div>
-                                </div>
-                                <p class="mb-3"><strong>Mi contribución principal:</strong> Lideré la
-                                    refactorización del backend y desarrollo completo del frontend en rama
-                                    independiente</p>
-                                <ul class="mb-0">
-                                    <li><strong>Refactoring Backend:</strong> Rediseñé y limpié la arquitectura del
-                                        core bancario, mejorando mantenibilidad y performance</li>
-                                    <li><strong>Documentación API:</strong> Implementé Swagger/OpenAPI para
-                                        documentación completa de todos los endpoints</li>
-                                    <li><strong>Frontend Independiente:</strong> Desarrollé desde cero toda la
-                                        interfaz de usuario en una rama separada, implementando el panel
-                                        administrativo completo</li>
-                                    <li><strong>Core Banking:</strong> Construí el servicio de transferencias entre
-                                        cuentas con validaciones de negocio complejas</li>
-                                    <li><strong>Módulo de Gestión:</strong> Implementé el sistema completo de
-                                        administración de usuarios, tarjetas y transacciones</li>
-                                    <li><strong>Seguridad Transaccional:</strong> Diseñé validaciones de seguridad y
-                                        coherencia de datos para operaciones financieras</li>
-                                </ul>
-                            </div>
-
-                            <!-- Proyecto 5: TrackMyFix -->
-                            <div class="project-card mb-4 p-4 border rounded">
-                                <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h4 class="mb-0 text-primary">TrackMyFix – Servicio Técnico</h4>
-                                    <div>
-                                        <span class="badge bg-secondary me-2">Process Analysis</span>
-                                        <span class="badge bg-success">Backend Specialist</span>
-                                    </div>
-                                </div>
-                                <p class="mb-3"><strong>Mi contribución principal:</strong> Análisis y desarrollo
-                                    del sistema de seguimiento</p>
-                                <ul class="mb-0">
-                                    <li><strong>Análisis de Procesos:</strong> Mapeé el flujo completo de reparación
-                                        para diseño técnico</li>
-                                    <li><strong>Desarrollo Frontend:</strong> Implementé la interfaz de seguimiento
-                                        en tiempo real para clientes</li>
-                                    <li><strong>Backend:</strong> Desarrollé los endpoints para actualización de
-                                        estados</li>
-                                    <li><strong>Impacto:</strong> Sistema que mejoró la trazabilidad y satisfacción
-                                        del cliente</li>
-                                </ul>
-                            </div>
-
-                            <!-- CTA para portafolio -->
-                            <div class="mt-4 p-4 bg-light border rounded text-center">
-                                <h5 class="mb-3">¿Quieres ver el código y detalles técnicos?</h5>
-                                <p class="mb-3">Cada proyecto incluye repositorio, documentación y decisiones de
-                                    arquitectura.</p>
-                                <a href="#portfolio" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-external-link-alt me-2"></i>Ver Proyectos Detallados
-                                </a>
-                            </div>
-
+                            <p class="mb-3"><strong>Contribución principal:</strong> Participé en la refactorización
+                                integral del backend, integré servicios externos para cotizaciones del dólar y
+                                desarrollé desde cero el frontend administrativo.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>Refactoring Backend:</strong> Rediseñé y limpié la arquitectura
+                                    del core bancario, mejorando mantenibilidad y performance.</li>
+                                <li class="mb-2"><strong>Integración Financiera:</strong> Implementé servicios externos
+                                    para cotizaciones del dólar en tiempo real.</li>
+                                <li class="mb-2"><strong>Frontend Independiente:</strong> Desarrollé desde cero toda la
+                                    interfaz de usuario en una rama separada, implementando el panel administrativo
+                                    completo.</li>
+                                <li class="mb-2"><strong>Core Banking:</strong> Construí el servicio de transferencias
+                                    entre cuentas con validaciones de negocio complejas.</li>
+                                <li class="mb-2"><strong>Documentación API:</strong> Implementé Swagger/OpenAPI para
+                                    documentación completa de todos los endpoints.</li>
+                            </ul>
+                            <a href="#proyecto-wallex" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Ver Proyecto Detallado
+                            </a>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Diciembre 2024 - Presente</span></div>
+
+                        <!-- Proyecto: TrackMyFix -->
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">TrackMyFix – Servicio Técnico</h4>
+                                <div>
+                                    <span class="badge bg-secondary me-1">Process Analysis</span>
+                                    <span class="badge bg-success">Backend</span>
+                                </div>
+                            </div>
+                            <p class="mb-3"><strong>Contribución principal:</strong> Desarrollé funcionalidades de
+                                seguimiento de reparaciones y actualización de estados en tiempo real.</p>
+                            <ul class="mb-3">
+                                <li class="mb-2"><strong>Análisis de Procesos:</strong> Mapeé el flujo completo de
+                                    reparación para diseño técnico.</li>
+                                <li class="mb-2"><strong>Desarrollo Frontend:</strong> Implementé la interfaz de
+                                    seguimiento en tiempo real para clientes.</li>
+                                <li class="mb-2"><strong>Backend:</strong> Desarrollé los endpoints para actualización
+                                    de estados.</li>
+                                <li class="mb-2"><strong>Impacto:</strong> Sistema que mejoró la trazabilidad y
+                                    satisfacción del cliente.</li>
+                            </ul>
+                            <a href="#proyecto-trackmyfix" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-1"></i>Ver Proyecto Detallado
+                            </a>
+                        </div>
+
+                        <!-- CTA para portafolio -->
+                        <div class="mt-4 p-4 bg-light border rounded text-center">
+                            <h5 class="mb-3">¿Quieres ver el código y detalles técnicos?</h5>
+                            <p class="mb-3">Cada proyecto incluye repositorio, documentación y decisiones de
+                                arquitectura.</p>
+                            <a href="#portfolio" class="btn btn-primary btn-lg">
+                                <i class="fas fa-external-link-alt me-2"></i>Ver Proyectos Detallados
+                            </a>
+                        </div>
+
                     </div>
+                    <div class="flex-shrink-0"><span class="text-primary">Diciembre 2024 - Presente</span></div>
                 </div>
 
-
-
+                <!-- Especialista en Ventas -->
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Técnico Informático</h3>
-                        <div class="subheading mb-3">Autónomo</div>
-                        <ul class="fa-ul mb-0">
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Formateo, reparación y
-                                mantenimiento de equipos informáticos.</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Instalación de Sistemas
-                                Operativos y programas.</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Tareas de bases de datos SQL.
-                            </li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Búsqueda proactiva y captación de
-                                nuevos clientes. Fidelización.</li>
-                        </ul>
+                        <h3 class="mb-0">Especialista en Ventas</h3>
+                        <div class="subheading mb-3">Coto C.I.C.S.A.</div>
+
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Gestión Comercial y Experiencia al Cliente</h4>
+                                <div>
+                                    <span class="badge bg-primary me-1">Ventas</span>
+                                    <span class="badge bg-success me-1">KPIs</span>
+                                    <span class="badge bg-info">Fidelización</span>
+                                </div>
+                            </div>
+                            <ul class="mb-0">
+                                <li class="mb-2"><strong>Ciclo Comercial:</strong> Gestión del ciclo comercial basada en
+                                    profundo conocimiento técnico de productos, abarcando asesoramiento, fidelización y
+                                    comercialización conjunta de bienes físicos y servicios intangibles.</li>
+                                <li class="mb-2"><strong>Control de Stock:</strong> Ejecución de controles de stock y
+                                    coordinación de despachos, operando sistemas para actualización de estados de envío
+                                    y asegurando trazabilidad de entregas.</li>
+                                <li class="mb-2"><strong>Resolución de Conflictos:</strong> Solución de conflictos ante
+                                    reclamos de usuarios y resolución de incidencias en la cadena de distribución,
+                                    realizando seguimiento de indicadores comerciales (KPIs).</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Enero 2011 - Diciembre 2024</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Enero 2017 - Mayo 2023</span></div>
                 </div>
 
+                <!-- Coordinador de Operaciones Comerciales -->
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Vendedor</h3>
-                        <div class="subheading mb-3">Coto C.I.C.S.A</div>
-                        <ul class="fa-ul mb-0">
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Destreza en la venta de productos
-                                y garantías extendidas.</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Habilidades destacadas en la
-                                gestión efectiva de problemas, especialmente en situaciones de reclamos.</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Amplio conocimiento en el manejo
-                                integral de productos, abarcando ingreso, proceso y salida del inventario.</li>
-                        </ul>
+                        <h3 class="mb-0">Coordinador de Operaciones Comerciales</h3>
+                        <div class="subheading mb-3">Coto C.I.C.S.A.</div>
+
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Liderazgo Logístico y Gestión de Inventarios</h4>
+                                <div>
+                                    <span class="badge bg-primary me-1">Liderazgo</span>
+                                    <span class="badge bg-success me-1">Inventarios</span>
+                                    <span class="badge bg-info">KPIs</span>
+                                </div>
+                            </div>
+                            <ul class="mb-0">
+                                <li class="mb-2"><strong>Liderazgo de Equipos:</strong> Liderazgo de equipos mixtos
+                                    (internos y externos), optimizando flujos de abastecimiento, reposición y exhibición
+                                    estratégica.</li>
+                                <li class="mb-2"><strong>Gestión de Inventarios:</strong> Gestión de inventarios y
+                                    control de stock, analizando diferencias operativas para asegurar disponibilidad y
+                                    evitar quiebres.</li>
+                                <li class="mb-2"><strong>Monitoreo de KPIs:</strong> Monitoreo de KPIs e implementación
+                                    de acciones en el piso de ventas, maximizando rentabilidad e incrementando
+                                    facturación.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Enero 2017 - Julio 2023</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Mayo 2012 - Enero 2017</span></div>
                 </div>
 
+                <!-- Recepcionista de Mercadería y Control de Stock -->
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">Encargado de salon de ventas</h3>
-                        <div class="subheading mb-3">Coto C.I.C.S.A</div>
-                        <ul class="fa-ul mb-0">
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Liderar y organizar al equipo de
-                                ventas, asignando tareas y asegurando un ambiente de trabajo productivo.</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Gestionar el inventario de
-                                productos, asegurando un adecuado abastecimiento y reduciendo pérdidas.</li>
-                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Gestionar estratégicamente los
-                                niveles de inventario para evitar faltantes y minimizar excesos, optimizando la rotación
-                                de productos.</li>
-                        </ul>
+                        <h3 class="mb-0">Recepcionista de Mercadería y Control de Stock</h3>
+                        <div class="subheading mb-3">Wong — Cencosud</div>
+
+                        <div class="project-card mb-4 p-4 border rounded">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h4 class="mb-0 text-primary">Control de Calidad y Trazabilidad</h4>
+                                <div>
+                                    <span class="badge bg-primary me-1">SAP</span>
+                                    <span class="badge bg-success me-1">Control Stock</span>
+                                    <span class="badge bg-info">Logística</span>
+                                </div>
+                            </div>
+                            <ul class="mb-0">
+                                <li class="mb-2"><strong>Recepción y Control:</strong> Recepción y control de
+                                    mercadería, validación documental y registro de productos mediante SAP y sistemas de
+                                    inventario.</li>
+                                <li class="mb-2"><strong>Detección de Diferencias:</strong> Detección y gestión de
+                                    diferencias entre mercadería recibida y documentación de proveedores.</li>
+                                <li class="mb-2"><strong>Coordinación Operativa:</strong> Coordinación con áreas
+                                    operativas para garantizar correcta trazabilidad y almacenamiento de productos.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Febrero 2014 - Enero 2017</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Mayo 2008 - Agosto 2011</span></div>
                 </div>
 
             </div>
@@ -287,34 +517,21 @@
                     <div class="flex-grow-1">
                         <h3 class="mb-0">Universidad de la Ciudad de Buenos Aires</h3>
                         <div class="subheading mb-3">Licenciatura en Tecnologías Digitales</div>
-                        <p>Promedio académico: 8.2 <a hidden="true"
-                                href="assets/doc/Certificado-Java-Standard-17-Web-Programming-EducaciónIT.pdf"
-                                target="_blank" rel="noopener noreferrer"><i class="fas fa-download text-primary"></i>
-                                Descargar</a></p>
+                        <p>Promedio académico: 8.2</p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2024 - Diciembre 2025 </span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2024 - Diciembre 2025</span></div>
                 </div>
 
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">EducaciónIT</h3>
-                        <div class="subheading mb-3">Java Spring Boot</div>
-                        <p>Promedio académico: 8.0 - <a href="assets/doc/Certificado-Java-Spring-Boot-EducaciónIT.pdf"
-                                target="_blank" rel="noopener noreferrer"><i class="fas fa-download text-primary"></i>
+                        <div class="subheading mb-3">Java Developer Engineer</div>
+                        <p>Java Standard Web Programming · Hibernate · Spring Boot - <a
+                                href="assets/doc/Certificado-Java-Spring-Boot-EducaciónIT.pdf" target="_blank"
+                                rel="noopener noreferrer"><i class="fas fa-download text-primary"></i>
                                 Descargar Certificado</a></p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Noviembre 2024 - Diciembre 2024</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">EducaciónIT</h3>
-                        <div class="subheading mb-3">Java Hibernate</div>
-                        <p>Promedio académico: 8.0 - <a href="assets/doc/Certificado-Java-Hibernate-JPA-EducaciónIT.pdf"
-                                target="_blank" rel="noopener noreferrer"><i class="fas fa-download text-primary"></i>
-                                Descargar Certificado</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Octubre 2024 - Noviembre 2024</span></div>
+                    <div class="flex-shrink-0"><span class="text-primary">Abril 2024 - Diciembre 2024</span></div>
                 </div>
 
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -331,18 +548,6 @@
 
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">EducaciónIT</h3>
-                        <div class="subheading mb-3">Java Standard 17 Web Programming</div>
-                        <p>Promedio académico: 9 - <a
-                                href="assets/doc/Certificado-Java-Standard-17-Web-Programming-EducaciónIT.pdf"
-                                target="_blank" rel="noopener noreferrer"><i class="fas fa-download text-primary"></i>
-                                Descargar Certificado</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Abril 2024 - Julio 2024</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
                         <h3 class="mb-0">Instituto de Tecnología ORT</h3>
                         <div class="subheading mb-3">Analista de Sistemas</div>
                         <p>Promedio académico: 8.4 - <a
@@ -355,151 +560,104 @@
                     <div class="flex-shrink-0"><span class="text-primary">Julio 2020 - Julio 2023</span></div>
                 </div>
 
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Instituto Superior “Federico Villarreal”</h3>
-                        <div class="subheading mb-3">Tecnicatura, Computación e Informática</div>
-                        <p>Promedio académico: 8.0 - <a
-                                href="assets/doc/Titulo tecnico informatico - Delmer Rodriguez.pdf" target="_blank"
-                                rel="noopener noreferrer"><i class="fas fa-download text-primary"></i> Descargar
-                                Diploma</a></p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Marzo 2008 - Diciembre 2011</span></div>
-                </div>
-            </div>
         </section>
         <hr class="m-0" />
 
         <!-- Skills -->
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
-                <h2 class="mb-5">Habilidades Técnicas</h2>
+                <h2 class="mb-5">Stack Tecnológico</h2>
 
                 <!-- Desarrollo Full Stack -->
                 <div class="mb-5">
-                    <h3 class="mb-4">🛠 Desarrollo Full Stack</h3>
+                    <h3 class="mb-4">🛠 Backend</h3>
                     <div class="row">
-                        <!-- Backend -->
                         <div class="col-md-6 mb-4">
                             <div class="skill-section p-4 border rounded">
                                 <h4 class="mb-3 text-primary">
-                                    <i class="fas fa-server me-2"></i>Backend
+                                    <i class="fas fa-server me-2"></i>Tecnologías
                                 </h4>
                                 <div class="mb-3">
-                                    <strong class="d-block mb-2">Tecnologías:</strong>
+                                    <span class="badge bg-primary me-2 mb-2">Java</span>
                                     <span class="badge bg-primary me-2 mb-2">Spring Boot</span>
+                                    <span class="badge bg-primary me-2 mb-2">Hibernate</span>
+                                    <span class="badge bg-primary me-2 mb-2">REST APIs</span>
                                     <span class="badge bg-primary me-2 mb-2">NestJS</span>
                                     <span class="badge bg-primary me-2 mb-2">TypeScript</span>
                                 </div>
-                                <div>
-                                    <strong class="d-block mb-2">Habilidades:</strong>
-                                    <span class="badge bg-light text-dark me-2 mb-2">APIs REST</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Swagger</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Autenticación JWT</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Integración APIs</span>
-                                </div>
                             </div>
                         </div>
 
-                        <!-- Frontend -->
                         <div class="col-md-6 mb-4">
                             <div class="skill-section p-4 border rounded">
                                 <h4 class="mb-3 text-success">
-                                    <i class="fas fa-code me-2"></i>Frontend
-                                </h4>
-                                <div class="mb-3">
-                                    <strong class="d-block mb-2">Tecnologías:</strong>
-                                    <span class="badge bg-success me-2 mb-2">React.js</span>
-                                    <span class="badge bg-success me-2 mb-2">Next.js</span>
-                                    <span class="badge bg-success me-2 mb-2">Tailwind CSS</span>
-                                </div>
-                                <div>
-                                    <strong class="d-block mb-2">Habilidades:</strong>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Dashboards</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Diseño Responsivo</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Gestión de Estado</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!-- Bases de Datos -->
-                        <div class="col-md-6 mb-4">
-                            <div class="skill-section p-4 border rounded">
-                                <h4 class="mb-3 text-info">
                                     <i class="fas fa-database me-2"></i>Bases de Datos
                                 </h4>
                                 <div class="mb-3">
-                                    <strong class="d-block mb-2">Tecnologías:</strong>
-                                    <span class="badge bg-info me-2 mb-2">PostgreSQL</span>
-                                    <span class="badge bg-info me-2 mb-2">MySQL</span>
-                                    <span class="badge bg-info me-2 mb-2">MongoDB</span>
-                                </div>
-                                <div>
-                                    <strong class="d-block mb-2">Habilidades:</strong>
-                                    <span class="badge bg-light text-dark me-2 mb-2">SQL</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Diseño DB</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">ORM</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- DevOps -->
-                        <div class="col-md-6 mb-4">
-                            <div class="skill-section p-4 border rounded">
-                                <h4 class="mb-3 text-warning">
-                                    <i class="fas fa-cloud me-2"></i>DevOps & Cloud
-                                </h4>
-                                <div class="mb-3">
-                                    <strong class="d-block mb-2">Tecnologías:</strong>
-                                    <span class="badge bg-warning text-dark me-2 mb-2">Git/GitHub</span>
-                                    <span class="badge bg-warning text-dark me-2 mb-2">Docker</span>
-                                    <span class="badge bg-warning text-dark me-2 mb-2">Render</span>
-                                    <span class="badge bg-warning text-dark me-2 mb-2">Vercel</span>
-                                </div>
-                                <div>
-                                    <strong class="d-block mb-2">Habilidades:</strong>
-                                    <span class="badge bg-light text-dark me-2 mb-2">CI/CD</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Deploy</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Cloud Services</span>
-                                    <span class="badge bg-light text-dark me-2 mb-2">Git Flow</span>
+                                    <span class="badge bg-success me-2 mb-2">PostgreSQL</span>
+                                    <span class="badge bg-success me-2 mb-2">MySQL</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Análisis de Sistemas -->
+                <!-- Frontend y Herramientas -->
                 <div class="mb-5">
-                    <h3 class="mb-4">📊 Análisis de Sistemas</h3>
+                    <h3 class="mb-4">🎨 Frontend & Herramientas</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="skill-section p-4 border rounded">
+                                <h4 class="mb-3 text-info">
+                                    <i class="fas fa-code me-2"></i>Frontend
+                                </h4>
+                                <div class="mb-3">
+                                    <span class="badge bg-info me-2 mb-2">TypeScript</span>
+                                    <span class="badge bg-info me-2 mb-2">React.js</span>
+                                    <span class="badge bg-info me-2 mb-2">Next.js</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class="skill-section p-4 border rounded">
+                                <h4 class="mb-3 text-warning">
+                                    <i class="fas fa-tools me-2"></i>Herramientas
+                                </h4>
+                                <div class="mb-3">
+                                    <span class="badge bg-warning text-dark me-2 mb-2">Git/GitHub</span>
+                                    <span class="badge bg-warning text-dark me-2 mb-2">GitFlow</span>
+                                    <span class="badge bg-warning text-dark me-2 mb-2">Postman</span>
+                                    <span class="badge bg-warning text-dark me-2 mb-2">Swagger</span>
+                                    <span class="badge bg-warning text-dark me-2 mb-2">CI/CD</span>
+                                    <span class="badge bg-warning text-dark me-2 mb-2">GitHub Actions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Análisis Funcional y Operaciones -->
+                <div class="mb-5">
+                    <h3 class="mb-4">📊 Análisis & Operaciones</h3>
                     <div class="row">
                         <div class="col-md-6 mb-4">
                             <div class="skill-section p-4 border rounded h-100">
                                 <h4 class="mb-3 text-purple">
-                                    <i class="fas fa-chart-line me-2"></i>Análisis Técnico
+                                    <i class="fas fa-chart-line me-2"></i>Análisis Funcional
                                 </h4>
                                 <ul class="fa-ul">
-                                    <li class="mb-3">
-                                        <span class="fa-li"><i class="fas fa-check text-success"></i></span>
-                                        <strong>Análisis de Requerimientos</strong><br>
-                                        <small class="text-muted">Casos de uso y mapeo de procesos</small>
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Scrum / Metodologías Ágiles
                                     </li>
-                                    <li class="mb-3">
-                                        <span class="fa-li"><i class="fas fa-check text-success"></i></span>
-                                        <strong>Documentación Técnica</strong><br>
-                                        <small class="text-muted">Swagger, diagramas, especificaciones</small>
-                                    </li>
-                                    <li class="mb-3">
-                                        <span class="fa-li"><i class="fas fa-check text-success"></i></span>
-                                        <strong>Diseño de Arquitectura</strong><br>
-                                        <small class="text-muted">APIs escalables y sistemas modulares</small>
-                                    </li>
-                                    <li>
-                                        <span class="fa-li"><i class="fas fa-check text-success"></i></span>
-                                        <strong>Reglas de Negocio</strong><br>
-                                        <small class="text-muted">Implementación de lógica financiera</small>
-                                    </li>
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Relevamiento de
+                                        Requerimientos</li>
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Casos de Uso</li>
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Power BI / Reportes
+                                        operativos</li>
                                 </ul>
                             </div>
                         </div>
@@ -507,81 +665,33 @@
                         <div class="col-md-6 mb-4">
                             <div class="skill-section p-4 border rounded h-100">
                                 <h4 class="mb-3 text-purple">
-                                    <i class="fas fa-tasks me-2"></i>Gestión & Herramientas
+                                    <i class="fas fa-store me-2"></i>Operaciones & E-commerce
                                 </h4>
-                                <div class="mb-4">
-                                    <strong class="d-block mb-2">Metodologías:</strong>
-                                    <span class="badge bg-purple me-2 mb-2">Scrum</span>
-                                    <span class="badge bg-purple me-2 mb-2">Agile</span>
-                                    <span class="badge bg-purple me-2 mb-2">Git Flow</span>
-                                </div>
-
-                                <div class="mb-3">
-                                    <strong class="d-block mb-2">Herramientas:</strong>
-                                    <span class="badge bg-secondary me-2 mb-2">Swagger/OpenAPI</span>
-                                    <span class="badge bg-secondary me-2 mb-2">Postman</span>
-                                    <span class="badge bg-secondary me-2 mb-2">Trello</span>
-                                    <span class="badge bg-secondary me-2 mb-2">Figma</span>
-                                    <span class="badge bg-secondary me-2 mb-2">Power BI</span>
-                                </div>
+                                <ul class="fa-ul">
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Gestión de Inventarios</li>
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Control de Stock / Compras
+                                    </li>
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Tienda Nube / Mercado Libre
+                                    </li>
+                                    <li class="mb-2"><span class="fa-li"><i
+                                                class="fas fa-check text-success"></i></span>Seguimiento de Indicadores
+                                        (KPIs)</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Lenguajes y Soft Skills -->
+                <!-- Soft Skills -->
                 <div class="row">
-                    <!-- Lenguajes -->
-                    <div class="col-md-6 mb-4">
-                        <div class="skill-section p-4 border rounded">
-                            <h4 class="mb-3">💻 Lenguajes de Programación</h4>
-                            <div class="row">
-                                <div class="col-6 mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fab fa-java fa-2x text-danger me-3"></i>
-                                        <div>
-                                            <div class="fw-bold">Java</div>
-                                            <small class="text-muted">Spring Boot</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fab fa-react fa-2x text-info me-3"></i>
-                                        <div>
-                                            <div class="fw-bold">TypeScript</div>
-                                            <small class="text-muted">NestJS/Next.js</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 mb-3">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fab fa-microsoft fa-2x text-primary me-3"></i>
-                                        <div>
-                                            <div class="fw-bold">C#</div>
-                                            <small class="text-muted">.NET Core</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="d-flex align-items-center">
-                                        <i class="fab fa-android fa-2x text-purple me-3"></i>
-                                        <div>
-                                            <div class="fw-bold">Kotlin</div>
-                                            <small class="text-muted">Mobile</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Soft Skills -->
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-12 mb-4">
                         <div class="skill-section p-4 border rounded">
                             <h4 class="mb-3">🌟 Soft Skills</h4>
                             <div class="row">
-                                <div class="col-6 mb-3">
+                                <div class="col-4 mb-3">
                                     <div class="d-flex align-items-start">
                                         <i class="fas fa-users text-primary me-3 mt-1"></i>
                                         <div>
@@ -590,7 +700,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 mb-3">
+                                <div class="col-4 mb-3">
                                     <div class="d-flex align-items-start">
                                         <i class="fas fa-comments text-success me-3 mt-1"></i>
                                         <div>
@@ -599,7 +709,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 mb-3">
+                                <div class="col-4 mb-3">
                                     <div class="d-flex align-items-start">
                                         <i class="fas fa-lightbulb text-warning me-3 mt-1"></i>
                                         <div>
@@ -608,7 +718,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 mb-3">
+                                <div class="col-4 mb-3">
                                     <div class="d-flex align-items-start">
                                         <i class="fas fa-sync-alt text-info me-3 mt-1"></i>
                                         <div>
@@ -617,7 +727,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-4 mb-3">
                                     <div class="d-flex align-items-start">
                                         <i class="fas fa-brain text-purple me-3 mt-1"></i>
                                         <div>
@@ -626,7 +736,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-4">
                                     <div class="d-flex align-items-start">
                                         <i class="fas fa-clock text-danger me-3 mt-1"></i>
                                         <div>
@@ -639,17 +749,253 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Idiomas -->
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="skill-section p-4 border rounded">
+                            <h4 class="mb-3">🌎 Idiomas</h4>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-secondary me-3 mb-2 p-2">Español: Nativo</span>
+                                <span class="badge bg-secondary me-3 mb-2 p-2">Inglés: Básico (A2) — Lectura fluida de
+                                    documentación técnica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <hr class="m-0" />
-        <!-- Portafolio -->
+
         <section class="resume-section" id="portfolio">
             <div class="resume-section-content">
                 <h2 class="mb-5">Proyectos Destacados</h2>
 
+                <!-- Inventory Management System - Sistema de Gestión de Inventario -->
+                <div id="proyecto-inventory" class="project-card mb-5 p-4 border rounded">
+                    <div class="d-flex justify-content-between align-items-start mb-3 flex-wrap">
+                        <div class="mb-2">
+                            <h3 class="mb-1 text-primary">Inventory Management System - Utama</h3>
+                            <div class="subheading mb-1">Full Stack Developer | Proyecto Personal · Oct 2025 - Presente
+                            </div>
+                            <div class="small text-muted">
+                                <i class="fas fa-store me-1"></i> Aplicado en Utama Home & Deco (ecommerce real en
+                                producción)
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="badge bg-danger me-1">Spring Boot</span>
+                            <span class="badge bg-warning text-dark me-1">React</span>
+                            <span class="badge bg-success me-1">PostgreSQL</span>
+                            <span class="badge bg-info me-1">TypeScript</span>
+                            <span class="badge bg-primary me-1">Cloudinary</span>
+                            <span class="badge bg-secondary">TailwindCSS</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <div class="mb-3">
+                                <span class="badge bg-success me-2">
+                                    <i class="fas fa-check-circle me-1"></i> En Producción
+                                </span>
+                                <span class="badge bg-info me-2">
+                                    <i class="fas fa-chart-line me-1"></i> Caso de uso real
+                                </span>
+                                <span class="badge bg-primary me-2">
+                                    <i class="fas fa-code-branch me-1"></i> Full Stack
+                                </span>
+                                <span class="badge bg-secondary">
+                                    <i class="fas fa-cloud-upload-alt me-1"></i> CI/CD
+                                </span>
+                            </div>
+
+                            <p><strong>Problema real:</strong> Vendo en dos canales, Tiendanube y
+                                MercadoLibre. El stock no se sincroniza entre plataformas, lo que genera un problema
+                                grave: puedo vender en un canal un producto que ya no tengo disponible porque se vendió
+                                en el otro. Esto produce sobreventas, mala experiencia al cliente y pérdida de
+                                credibilidad. Además, cuando recibo mercadería de un proveedor, el proceso de control es
+                                tedioso: al contar el físico pueden surgir diferencias (productos faltantes, sobrantes o
+                                cantidades incorrectas) y sin un registro claro es imposible hacer un reclamo efectivo.
+                            </p>
+
+                            <p><strong>Solución:</strong> Un sistema que <strong>centraliza y ordena todo el proceso
+                                    comercial</strong>. El stock se gestiona desde un solo lugar, eliminando el desorden
+                                de vender por canales separados. <strong>Minimiza considerablemente el riesgo de
+                                    sobreventa</strong> al tener un único registro de stock confiable. Permite cargar la
+                                mercadería física recibida y <strong>genera reportes claros de diferencias por SKU o por
+                                    producto completo faltante/sobrante</strong>, para gestionar reclamos con los
+                                proveedores de forma ágil.</p>
+
+                            <p><strong>Mi contribución técnica:</strong> Desarrollo full stack completo del sistema,
+                                aplicando 14 años de experiencia en procesos comerciales.</p>
+                            <ul class="mb-3">
+                                <li><strong>Dashboard con KPIs en tiempo real:</strong> Filtros dinámicos que actualizan
+                                    automáticamente total de productos, activos, inactivos, stock bajo y sin stock.</li>
+                                <li><strong>Búsqueda inteligente:</strong> Buscar productos tanto por SKU propio como
+                                    por SKU del proveedor, mostrando siempre todas las métricas útiles del producto.
+                                </li>
+                                <li><strong>Historial completo por producto:</strong> Cada producto tiene su propio
+                                    registro con todos los movimientos de entrada y salida, permitiendo trazabilidad
+                                    total.</li>
+                                <li><strong>Múltiples SKU por proveedor:</strong> Cada producto puede asociarse a 1 o
+                                    más proveedores, y cada proveedor le asigna su propio código.</li>
+                                <li><strong>Gestión de proveedores, categorías y subcategorías:</strong> Estructura
+                                    jerárquica completa para organizar el catálogo.</li>
+                                <li><strong>Imágenes persistentes en Cloudinary:</strong> Cada producto tiene una foto
+                                    para identificarlo visualmente.</li>
+                                <li><strong>Registro de dimensiones:</strong> Cargar medidas del producto para calcular
+                                    volumen y saber cuánto cobrar por envío.</li>
+                                <li><strong>Tipos de movimiento detallados:</strong> Motivos de entrada/salida para
+                                    análisis de causas.</li>
+                                <li><strong>Backend (Spring Boot):</strong> APIs REST con Java 17, Spring Security
+                                    (JWT), JPA/Hibernate y PostgreSQL.</li>
+                                <li><strong>Frontend (React + TypeScript):</strong> Dashboard con Zustand, TailwindCSS y
+                                    React Router.</li>
+                                <li><strong>Deploy:</strong> Backend en Render con CI/CD, frontend en Vercel.</li>
+                            </ul>
+
+                            <div class="mb-3">
+                                <strong>Aptitudes demostradas:</strong>
+                                <span class="badge bg-secondary me-1">Spring Boot</span>
+                                <span class="badge bg-secondary me-1">React</span>
+                                <span class="badge bg-secondary me-1">TypeScript</span>
+                                <span class="badge bg-secondary me-1">PostgreSQL</span>
+                                <span class="badge bg-secondary me-1">JWT Security</span>
+                                <span class="badge bg-secondary me-1">Cloudinary</span>
+                                <span class="badge bg-secondary me-1">Zustand</span>
+                                <span class="badge bg-secondary me-1">TailwindCSS</span>
+                                <span class="badge bg-secondary me-1">REST API</span>
+                                <span class="badge bg-secondary me-1">CI/CD</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="video-container mb-3">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/PLACEHOLDER"
+                                    frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                            </div>
+                            <div class="mt-2 p-3 bg-light rounded">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-graduation-cap text-primary me-2"></i>
+                                    <strong class="small">Propósito del proyecto:</strong>
+                                </div>
+                                <small class="text-muted d-block mb-1">
+                                    Proyecto personal desarrollado para profundizar habilidades técnicas en un entorno
+                                    real, con código limpio, buenas prácticas y despliegue en producción.
+                                </small>
+                                <hr class="my-2">
+                                <div class="d-flex justify-content-between flex-wrap">
+                                    <small><i class="fas fa-check-circle text-success me-1"></i> En producción</small>
+                                    <small><i class="fas fa-chart-line text-primary me-1"></i> Caso real</small>
+                                    <small><i class="fas fa-file-alt text-warning me-1"></i> Trazabilidad</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="links-section">
+                        <a href="https://inventory-management-frontend-utama.vercel.app/"
+                            class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i>Frontend Inventory
+                        </a>
+                        <a href="https://github.com/DelmerRo/inventory-management-api"
+                            class="btn btn-sm btn-outline-dark me-2 mb-2" target="_blank">
+                            <i class="fab fa-github me-2"></i>Backend (Spring Boot)
+                        </a>
+                        <a href="https://github.com/DelmerRo/inventory-management-frontend"
+                            class="btn btn-sm btn-outline-dark me-2 mb-2" target="_blank">
+                            <i class="fab fa-github me-2"></i>Frontend (React)
+                        </a>
+                        <a href="https://www.utama.com.ar/" class="btn btn-sm btn-outline-success mb-2" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i>Ver sitio en producción
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Startup CRM Cross-Industry -->
+                <div id="proyecto-crm" class="project-card mb-5 p-4 border rounded">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                            <h3 class="mb-1 text-primary">Startup CRM Cross-Industry</h3>
+                            <div class="subheading mb-2">Full Stack Developer | No Country · Ene 2025 - Mar 2025</div>
+                        </div>
+                        <div>
+                            <span class="badge bg-danger me-1">Spring Boot</span>
+                            <span class="badge bg-warning text-dark me-1">React</span>
+                            <span class="badge bg-success me-1">PostgreSQL</span>
+                            <span class="badge bg-info me-1">WhatsApp API</span>
+                            <span class="badge bg-primary">Brevo</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <p><strong>Problema real:</strong> Startups con gestión comercial fragmentada (Leads en
+                                Excel, WhatsApp personal, emails separados, seguimientos a mano). Esto genera desorden,
+                                pérdida de oportunidades y poca visibilidad del proceso de ventas.</p>
+                            <p><strong>Solución:</strong> CRM que centraliza todo en un solo lugar, unifica WhatsApp y
+                                Email, organiza el proceso comercial en un funnel claro y da visibilidad con métricas
+                                reales.</p>
+                            <p><strong>Mi contribución técnica:</strong> Implementé la lógica para asociar todas las
+                                interacciones de WhatsApp y Email a un mismo contacto, manteniendo un historial único y
+                                completo de cada cliente.</p>
+                            <ul class="mb-3">
+                                <li><strong>Backend (Spring Boot):</strong> Desarrollo completo de APIs REST con Java
+                                    17, Spring Security (JWT), JPA/Hibernate y PostgreSQL</li>
+                                <li><strong>Frontend (React):</strong> Dashboard con TypeScript y Zustand para estado
+                                    simple y eficiente</li>
+                                <li><strong>WhatsApp Cloud API & Brevo:</strong> Integración completa para unificar
+                                    comunicaciones y tracking de estados</li>
+                                <li><strong>CRM Logic:</strong> Sistema de funnel comercial con estados: NEW_LEAD →
+                                    CONTACTED → IN_NEGOTIATION → PROPOSAL_SENT → CLOSED_WON/CLOSED_LOST</li>
+                                <li><strong>Métricas Dinámicas:</strong> Sistema que calcula en tiempo real tasa de
+                                    respuesta, mensajes enviados/recibidos y tareas completadas</li>
+                            </ul>
+                            <div class="mb-3">
+                                <strong>Aptitudes demostradas:</strong>
+                                <span class="badge bg-secondary me-1">Spring Boot</span>
+                                <span class="badge bg-secondary me-1">React</span>
+                                <span class="badge bg-secondary me-1">TypeScript</span>
+                                <span class="badge bg-secondary me-1">JWT Security</span>
+                                <span class="badge bg-secondary me-1">WhatsApp API</span>
+                                <span class="badge bg-secondary me-1">Email Integration</span>
+                                <span class="badge bg-secondary me-1">Business Logic</span>
+                                <span class="badge bg-secondary me-1">PostgreSQL</span>
+                                <span class="badge bg-secondary me-1">CI/CD</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-container mb-3">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/PLACEHOLDER"
+                                    frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="links-section">
+                        <a href="https://github.com/No-Country-simulation/S03-26-Equipo-19-Web-App-Development"
+                            class="btn btn-sm btn-outline-primary me-2" target="_blank">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                        <a href="https://crm-cross-industry.onrender.com/swagger-ui/index.html"
+                            class="btn btn-sm btn-outline-warning me-2" target="_blank">
+                            <i class="fas fa-book"></i> Swagger Docs
+                        </a>
+                        <a href="https://www.figma.com/design/bzmxmhExMhzrfNQO3QNiX2/S03-26-Equipo19-CRM"
+                            class="btn btn-sm btn-outline-info me-2" target="_blank">
+                            <i class="fab fa-figma"></i> Figma Design
+                        </a>
+                        <a href="https://trello.com/invite/b/69b95cf56a09087814b3018f/ATTI4206acc2ec080b1edef95ef7cdc4a251191D5486/startup-crm-cross-industry"
+                            class="btn btn-sm btn-outline-secondary" target="_blank">
+                            <i class="fab fa-trello"></i> Trello Board
+                        </a>
+                    </div>
+                </div>
+
                 <!-- TestiGo -->
-                <div class="project-card mb-5 p-4 border rounded">
+                <div id="proyecto-testigo" class="project-card mb-5 p-4 border rounded">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
                             <h3 class="mb-1 text-primary">TestiGo – CMS de Testimonios</h3>
@@ -659,32 +1005,30 @@
                             <span class="badge bg-primary me-1">NestJS</span>
                             <span class="badge bg-info me-1">Next.js</span>
                             <span class="badge bg-success me-1">PostgreSQL</span>
-                            <span class="badge bg-success">CI/CD</span>
+                            <span class="badge bg-secondary">CI/CD</span>
                         </div>
                     </div>
 
                     <div class="row mb-3">
                         <div class="col-md-8">
-                            <p><strong>Solución:</strong> Plataforma CMS para gestionar y publicar testimonios en
-                                múltiples formatos (texto, imagen, video) con API pública y sistema de embeds.</p>
-
-                            <p><strong>Mi contribución técnica:</strong> Desarrollo completo del sistema
-                                <strong>adaptándome y aprendiendo el stack tecnológico (NestJS/Next.js)</strong> durante
-                                la implementación.
-                            </p>
+                            <p><strong>Problema real:</strong> Empresas que necesitan gestionar y publicar testimonios
+                                de clientes en múltiples formatos (texto, imagen, video) sin una herramienta
+                                centralizada que permita control de versiones y aprobaciones.</p>
+                            <p><strong>Solución:</strong> Plataforma CMS con API pública y sistema de embeds que permite
+                                gestionar testimonios con sistema de roles (admin/moderador/contribuidor) y aprobación
+                                previa a publicación.</p>
+                            <p><strong>Mi contribución técnica:</strong> Implementación desde cero del esquema de roles
+                                y permisos, desarrollo de la API pública de testimonios y colaboración en el dashboard
+                                administrativo.</p>
                             <ul class="mb-3">
-                                <li><strong>Backend:</strong> Desarrollo de APIs REST con NestJS y TypeScript - un
-                                    framework nuevo para mí - implementando sistema de roles
-                                    (admin/moderador/contribuidor) e integraciones con Cloudinary y YouTube API</li>
-                                <li><strong>Frontend:</strong> Dashboard administrativo con Next.js/React, aprendiendo
-                                    el ecosistema durante el desarrollo, con gestión de estado en Zustand y estilos con
-                                    Tailwind CSS</li>
-                                <li><strong>DevOps:</strong> Deploy en Render (backend) y Vercel (frontend),
-                                    configurando flujos de CI/CD desde cero como parte del aprendizaje</li>
-                                <li><strong>Documentación:</strong> Swagger completo para API pública y privada,
-                                    aplicando estándares profesionales</li>
+                                <li><strong>Backend:</strong> Desarrollo de APIs REST con NestJS y TypeScript
+                                    implementando sistema de roles e integraciones con Cloudinary y YouTube API</li>
+                                <li><strong>Frontend:</strong> Dashboard administrativo con Next.js/React, gestión de
+                                    estado en Zustand y estilos con Tailwind CSS</li>
+                                <li><strong>DevOps:</strong> Deploy en Render (backend) y Vercel (frontend) con CI/CD
+                                </li>
+                                <li><strong>Documentación:</strong> Swagger completo para API pública y privada</li>
                             </ul>
-
                             <div class="mb-3">
                                 <strong>Aptitudes demostradas:</strong>
                                 <span class="badge bg-secondary me-1">NestJS</span>
@@ -693,13 +1037,8 @@
                                 <span class="badge bg-secondary me-1">Swagger</span>
                                 <span class="badge bg-secondary me-1">Tailwind CSS</span>
                                 <span class="badge bg-secondary me-1">Git Workflow</span>
-                                <span class="badge bg-secondary me-1"
-                                    style="background-color: #6f42c1 !important;">Adaptabilidad</span>
-                                <span class="badge bg-secondary me-1"
-                                    style="background-color: #20c997 !important;">Aprendizaje Rápido</span>
                             </div>
                         </div>
-
                         <div class="col-md-4">
                             <div class="video-container mb-3">
                                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/JBp4jO13MZs"
@@ -729,7 +1068,7 @@
                 </div>
 
                 <!-- CreditFlow -->
-                <div class="project-card mb-5 p-4 border rounded">
+                <div id="proyecto-creditflow" class="project-card mb-5 p-4 border rounded">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
                             <h3 class="mb-1 text-primary">CreditFlow – Plataforma Fintech</h3>
@@ -745,10 +1084,15 @@
 
                     <div class="row mb-3">
                         <div class="col-md-8">
-                            <p><strong>Solución:</strong> Sistema backend para onboarding digital de PYMEs y gestión de
-                                solicitudes de crédito en entorno fintech.</p>
-
-                            <p><strong>Mi contribución técnica:</strong></p>
+                            <p><strong>Problema real:</strong> PYMEs que necesitan acceder a financiamiento pero los
+                                procesos de evaluación crediticia son lentos y requieren verificación manual de datos
+                                ante el BCRA.</p>
+                            <p><strong>Solución:</strong> Sistema backend para onboarding digital de PYMEs con
+                                integración a APIs del BCRA para validación automática de CUIT y consulta de deudas
+                                financieras.</p>
+                            <p><strong>Mi contribución técnica:</strong> Desarrollo de la integración con servicios del
+                                BCRA para validación de CUIT y consulta de información financiera en procesos de
+                                evaluación crediticia.</p>
                             <ul class="mb-3">
                                 <li><strong>APIs REST:</strong> Desarrollo de endpoints para registro de
                                     usuarios/empresas con validación de CUIT</li>
@@ -756,12 +1100,9 @@
                                     financieras por DNI</li>
                                 <li><strong>Arquitectura:</strong> Diseño preparado para integración de servicios KYC
                                     (Sumsub/Onfido)</li>
-                                <li><strong>Seguridad:</strong> Implementación de reglas de negocio y validaciones
-                                    financieras</li>
                                 <li><strong>Documentación:</strong> Swagger/OpenAPI completa para todos los servicios
                                 </li>
                             </ul>
-
                             <div class="mb-3">
                                 <strong>Aptitudes demostradas:</strong>
                                 <span class="badge bg-secondary me-1">Spring Boot</span>
@@ -769,10 +1110,8 @@
                                 <span class="badge bg-secondary me-1">API Integration</span>
                                 <span class="badge bg-secondary me-1">Swagger</span>
                                 <span class="badge bg-secondary me-1">Fintech</span>
-                                <span class="badge bg-secondary me-1">KYC</span>
                             </div>
                         </div>
-
                         <div class="col-md-4">
                             <div class="video-container mb-3">
                                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/qoTw2v-iBbc"
@@ -797,55 +1136,8 @@
                     </div>
                 </div>
 
-                <!-- Plataforma Web Empresarial -->
-                <div class="project-card mb-5 p-4 border rounded">
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <div>
-                            <h3 class="mb-1 text-primary">Plataforma Web Empresarial</h3>
-                            <div class="subheading mb-2">Backend Developer | No Country · Abr 2025 - Jun 2025</div>
-                        </div>
-                        <div>
-                            <span class="badge bg-success me-1">OpenAI API</span>
-                            <span class="badge bg-info me-1">Automation</span>
-                            <span class="badge bg-primary">Video Processing</span>
-                        </div>
-                    </div>
-
-                    <p><strong>Desafío técnico principal:</strong> Automatización del subtitulado de videos con
-                        limitaciones de API y optimización de recursos.</p>
-
-                    <p><strong>Solución implementada:</strong></p>
-                    <ul class="mb-3">
-                        <li><strong>Flujo automatizado:</strong> Conversión video→audio → transcripción → traducción con
-                            OpenAI API</li>
-                        <li><strong>Optimización:</strong> Manejo de rate limits, caching y procesamiento por lotes para
-                            reducir costos</li>
-                        <li><strong>Traducción:</strong> Sistema para subtitular videos en otros idiomas al español
-                            automáticamente</li>
-                        <li><strong>Escalabilidad:</strong> Arquitectura preparada para procesamiento concurrente de
-                            múltiples videos</li>
-                    </ul>
-
-                    <div class="mb-3">
-                        <strong>Aptitudes demostradas:</strong>
-                        <span class="badge bg-secondary me-1">OpenAI API</span>
-                        <span class="badge bg-secondary me-1">Automatización</span>
-                        <span class="badge bg-secondary me-1">Rate Limiting</span>
-                        <span class="badge bg-secondary me-1">Video Processing</span>
-                        <span class="badge bg-secondary me-1">Swagger</span>
-                        <span class="badge bg-secondary me-1">RBAC</span>
-                    </div>
-
-                    <div class="links-section">
-                        <a href="https://equipo-h5-05-play-attention.onrender.com/swagger-ui/index.html"
-                            class="btn btn-sm btn-outline-warning" target="_blank">
-                            <i class="fas fa-book"></i> API Documentation
-                        </a>
-                    </div>
-                </div>
-
                 <!-- Wallex -->
-                <div class="project-card mb-5 p-4 border rounded">
+                <div id="proyecto-wallex" class="project-card mb-5 p-4 border rounded">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
                             <h3 class="mb-1 text-primary">Wallex – Sistema Financiero</h3>
@@ -860,10 +1152,14 @@
 
                     <div class="row mb-3">
                         <div class="col-md-8">
-                            <p><strong>Solución:</strong> Sistema de gestión financiera con transferencias, consulta de
-                                saldo, gestión de tarjetas y notificaciones en tiempo real.</p>
-
-                            <p><strong>Mi contribución técnica:</strong></p>
+                            <p><strong>Problema real:</strong> Código legacy con arquitectura acoplada, difícil de
+                                mantener y escalar, que afectaba la performance y seguridad del sistema financiero.</p>
+                            <p><strong>Solución:</strong> Refactorización completa del backend, integración de
+                                cotizaciones del dólar en tiempo real y desarrollo de frontend administrativo desde
+                                cero.</p>
+                            <p><strong>Mi contribución técnica:</strong> Participación en la refactorización integral
+                                del backend, integración de servicios externos para cotizaciones del dólar y desarrollo
+                                desde cero del frontend administrativo.</p>
                             <ul class="mb-3">
                                 <li><strong>Refactoring Backend:</strong> Rediseño completo de arquitectura, limpieza de
                                     código y optimización de performance</li>
@@ -873,9 +1169,7 @@
                                     validaciones transaccionales</li>
                                 <li><strong>Documentación:</strong> Swagger completo para todos los endpoints del
                                     sistema</li>
-                                <li><strong>Deploy:</strong> Configuración de CI/CD y despliegue en cloud</li>
                             </ul>
-
                             <div class="mb-3">
                                 <strong>Aptitudes demostradas:</strong>
                                 <span class="badge bg-secondary me-1">Code Refactoring</span>
@@ -883,13 +1177,11 @@
                                 <span class="badge bg-secondary me-1">Swagger Docs</span>
                                 <span class="badge bg-secondary me-1">CI/CD</span>
                                 <span class="badge bg-secondary me-1">Git Flow</span>
-                                <span class="badge bg-secondary me-1">Cloud Deployment</span>
                             </div>
                         </div>
-
                         <div class="col-md-4">
                             <div class="video-container mb-3">
-                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/[ID_DEL_VIDEO]"
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/PLACEHOLDER"
                                     frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
                             </div>
                         </div>
@@ -911,8 +1203,65 @@
                     </div>
                 </div>
 
+                <!-- Plataforma Web Empresarial -->
+                <div id="proyecto-plataforma" class="project-card mb-5 p-4 border rounded">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                            <h3 class="mb-1 text-primary">Plataforma Web Empresarial</h3>
+                            <div class="subheading mb-2">Backend Developer | No Country · Abr 2025 - Jun 2025</div>
+                        </div>
+                        <div>
+                            <span class="badge bg-success me-1">OpenAI API</span>
+                            <span class="badge bg-info me-1">Automation</span>
+                            <span class="badge bg-primary">Video Processing</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <p><strong>Problema real:</strong> Empresas que necesitan subtitular contenido multimedia en
+                                múltiples idiomas, un proceso manual costoso y lento que requiere transcripción y
+                                traducción.</p>
+                            <p><strong>Solución:</strong> Sistema automatizado de procesamiento de videos con la API de
+                                OpenAI para transcripción y traducción de subtítulos, con caché y control de rate limits
+                                para optimizar costos.</p>
+                            <p><strong>Mi contribución técnica:</strong> Diseñé e implementé un sistema automatizado de
+                                procesamiento de videos con la API de OpenAI.</p>
+                            <ul class="mb-3">
+                                <li><strong>Flujo automatizado:</strong> Conversión video→audio → transcripción →
+                                    traducción con OpenAI API</li>
+                                <li><strong>Optimización:</strong> Manejo de rate limits, caching y procesamiento por
+                                    lotes para reducir costos</li>
+                                <li><strong>Traducción:</strong> Sistema para subtitular videos en otros idiomas al
+                                    español automáticamente</li>
+                            </ul>
+                            <div class="mb-3">
+                                <strong>Aptitudes demostradas:</strong>
+                                <span class="badge bg-secondary me-1">OpenAI API</span>
+                                <span class="badge bg-secondary me-1">Automatización</span>
+                                <span class="badge bg-secondary me-1">Rate Limiting</span>
+                                <span class="badge bg-secondary me-1">Video Processing</span>
+                                <span class="badge bg-secondary me-1">Swagger</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-container mb-3">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/PLACEHOLDER"
+                                    frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="links-section">
+                        <a href="https://equipo-h5-05-play-attention.onrender.com/swagger-ui/index.html"
+                            class="btn btn-sm btn-outline-warning" target="_blank">
+                            <i class="fas fa-book"></i> API Documentation
+                        </a>
+                    </div>
+                </div>
+
                 <!-- TrackMyFix -->
-                <div class="project-card mb-5 p-4 border rounded">
+                <div id="proyecto-trackmyfix" class="project-card mb-5 p-4 border rounded">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
                             <h3 class="mb-1 text-primary">TrackMyFix – Gestión de Servicio Técnico</h3>
@@ -925,27 +1274,40 @@
                         </div>
                     </div>
 
-                    <p><strong>Solución:</strong> Aplicación web para seguimiento de equipos en servicio técnico con
-                        roles diferenciados (cliente, técnico, administrador).</p>
-
-                    <p><strong>Mi contribución técnica:</strong></p>
-                    <ul class="mb-3">
-                        <li><strong>API Development:</strong> Sistema REST para gestión de órdenes de trabajo y
-                            seguimiento de estados</li>
-                        <li><strong>Base de Datos:</strong> Diseño de esquema MySQL con relaciones entre clientes,
-                            técnicos y equipos</li>
-                        <li><strong>Funcionalidades:</strong> Registro de órdenes, actualización de estados, generación
-                            de informes</li>
-                        <li><strong>Roles:</strong> Sistema multi-usuario con permisos diferenciados</li>
-                    </ul>
-
-                    <div class="mb-3">
-                        <strong>Aptitudes demostradas:</strong>
-                        <span class="badge bg-secondary me-1">Spring Boot</span>
-                        <span class="badge bg-secondary me-1">MySQL</span>
-                        <span class="badge bg-secondary me-1">REST API</span>
-                        <span class="badge bg-secondary me-1">System Design</span>
-                        <span class="badge bg-secondary me-1">Team Collaboration</span>
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <p><strong>Problema real:</strong> Talleres de servicio técnico que carecen de trazabilidad
+                                en el proceso de reparación, lo que genera incertidumbre en los clientes y pérdida de
+                                seguimiento de los equipos.</p>
+                            <p><strong>Solución:</strong> Aplicación web para seguimiento de equipos en servicio técnico
+                                con roles diferenciados (cliente, técnico, administrador) y actualización de estados en
+                                tiempo real.</p>
+                            <p><strong>Mi contribución técnica:</strong> Desarrollo de funcionalidades de seguimiento de
+                                reparaciones y actualización de estados en tiempo real.</p>
+                            <ul class="mb-3">
+                                <li><strong>Análisis de Procesos:</strong> Mapeé el flujo completo de reparación para
+                                    diseño técnico</li>
+                                <li><strong>Desarrollo Frontend:</strong> Implementé la interfaz de seguimiento en
+                                    tiempo real para clientes</li>
+                                <li><strong>Backend:</strong> Desarrollé los endpoints para actualización de estados
+                                </li>
+                                <li><strong>Impacto:</strong> Sistema que mejoró la trazabilidad y satisfacción del
+                                    cliente</li>
+                            </ul>
+                            <div class="mb-3">
+                                <strong>Aptitudes demostradas:</strong>
+                                <span class="badge bg-secondary me-1">Spring Boot</span>
+                                <span class="badge bg-secondary me-1">MySQL</span>
+                                <span class="badge bg-secondary me-1">REST API</span>
+                                <span class="badge bg-secondary me-1">System Design</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-container mb-3">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/PLACEHOLDER"
+                                    frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="links-section">
@@ -956,10 +1318,10 @@
                     </div>
                 </div>
 
-                <!-- Proyectos Anteriores (mantenidos pero optimizados) -->
+                <!-- Proyectos Anteriores -->
                 <h3 class="mt-5 mb-4">Proyectos Anteriores</h3>
 
-                <!-- Aplicación Mobile en Kotlin -->
+                <!-- RespirAR – App de Calidad del Aire -->
                 <div class="project-card mb-5 p-4 border rounded">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
@@ -973,45 +1335,46 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row mb-3">
                         <div class="col-md-8">
+                            <p><strong>Problema real:</strong> Falta de información accesible y en tiempo real sobre la
+                                calidad del aire en diferentes zonas de la ciudad, lo que afecta la salud de los
+                                ciudadanos.</p>
                             <p><strong>Solución:</strong> Aplicación móvil para monitoreo de calidad del aire con
                                 integración a sensores IoT y plataforma Fiware.</p>
-
-                            <p><strong>Mi contribución:</strong> Desarrollo del módulo de estaciones móvil que permite
-                                ABM de estaciones y sensores, visualización de datos en mapa con categorización por
-                                calidad del aire.</p>
-
+                            <p><strong>Mi contribución técnica:</strong> Desarrollo del módulo de estaciones móvil que
+                                permite ABM de estaciones y sensores, visualización de datos en mapa con categorización
+                                por calidad del aire.</p>
                             <ul class="mb-3">
                                 <li><strong>Arquitectura:</strong> Kotlin + Express + Orion Context Broker</li>
                                 <li><strong>Funcionalidades:</strong> Gestión de estaciones, monitoreo en tiempo real,
                                     roles (admin/usuario/invitado)</li>
                                 <li><strong>Integración:</strong> Conexión con sensores IoT y plataforma Fiware</li>
                             </ul>
-
                             <div class="mb-3">
-                                <strong>Aptitudes:</strong>
+                                <strong>Aptitudes demostradas:</strong>
                                 <span class="badge bg-secondary me-1">Kotlin</span>
                                 <span class="badge bg-secondary me-1">Fiware</span>
                                 <span class="badge bg-secondary me-1">Orion Context Broker</span>
                                 <span class="badge bg-secondary me-1">Kotlin Coroutines</span>
                                 <span class="badge bg-secondary me-1">Mobile Development</span>
                             </div>
-
-                            <a href="https://github.com/DelmerRo?tab=repositories"
-                                class="btn btn-sm btn-outline-primary me-2" target="_blank">
-                                <i class="fab fa-github"></i> Ver Repositorios
-                            </a>
                         </div>
-
                         <div class="col-md-4">
                             <iframe width="100%" height="200" src="https://www.youtube.com/embed/ebKBgPclcH0"
                                 frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
                         </div>
                     </div>
+
+                    <div class="links-section">
+                        <a href="https://github.com/DelmerRo?tab=repositories" class="btn btn-sm btn-outline-primary"
+                            target="_blank">
+                            <i class="fab fa-github"></i> Ver Repositorios
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Foro Web con C# -->
+                <!-- Foro Web con C# .NET -->
                 <div class="project-card mb-5 p-4 border rounded">
                     <div class="d-flex justify-content-between align-items-start mb-3">
                         <div>
@@ -1025,66 +1388,64 @@
                         </div>
                     </div>
 
-                    <p><strong>Solución:</strong> Foro web completo con sistema de seguridad, gestión de usuarios y
-                        contenidos privados.</p>
-
-                    <p><strong>Características implementadas:</strong></p>
-                    <ul class="mb-3">
-                        <li><strong>Seguridad:</strong> Identity Framework para autenticación y autorización</li>
-                        <li><strong>Contenido:</strong> Creación de entradas, preguntas/respuestas, sistema de votos
-                        </li>
-                        <li><strong>Privacidad:</strong> Sistema de bloqueo para publicaciones privadas con acceso
-                            restringido</li>
-                        <li><strong>Gestión:</strong> Administración completa de usuarios y roles</li>
-                    </ul>
-
-                    <div class="mb-3">
-                        <strong>Aptitudes:</strong>
-                        <span class="badge bg-secondary me-1">C#</span>
-                        <span class="badge bg-secondary me-1">.NET Framework</span>
-                        <span class="badge bg-secondary me-1">Entity Framework</span>
-                        <span class="badge bg-secondary me-1">Identity Framework</span>
-                        <span class="badge bg-secondary me-1">Web Security</span>
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <p><strong>Problema real:</strong> Necesidad de una plataforma de discusión con control de
+                                acceso y gestión de contenidos privados.</p>
+                            <p><strong>Solución:</strong> Foro web completo con sistema de seguridad, gestión de
+                                usuarios y contenidos privados.</p>
+                            <p><strong>Mi contribución técnica:</strong> Desarrollo completo del backend con
+                                autenticación y autorización.</p>
+                            <ul class="mb-3">
+                                <li><strong>Seguridad:</strong> Identity Framework para autenticación y autorización
+                                </li>
+                                <li><strong>Contenido:</strong> Creación de entradas, preguntas/respuestas, sistema de
+                                    votos</li>
+                                <li><strong>Privacidad:</strong> Sistema de bloqueo para publicaciones privadas con
+                                    acceso restringido</li>
+                                <li><strong>Gestión:</strong> Administración completa de usuarios y roles</li>
+                            </ul>
+                            <div class="mb-3">
+                                <strong>Aptitudes demostradas:</strong>
+                                <span class="badge bg-secondary me-1">C#</span>
+                                <span class="badge bg-secondary me-1">.NET Framework</span>
+                                <span class="badge bg-secondary me-1">Entity Framework</span>
+                                <span class="badge bg-secondary me-1">Identity Framework</span>
+                                <span class="badge bg-secondary me-1">Web Security</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="video-container mb-3">
+                                <iframe width="100%" height="200" src="https://www.youtube.com/embed/PLACEHOLDER"
+                                    frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                            </div>
+                        </div>
                     </div>
 
-                    <a href="https://github.com/DelmerRo?tab=repositories" class="btn btn-sm btn-outline-primary"
-                        target="_blank">
-                        <i class="fab fa-github"></i> Ver Código Fuente
-                    </a>
+                    <div class="links-section">
+                        <a href="https://github.com/DelmerRo?tab=repositories" class="btn btn-sm btn-outline-primary"
+                            target="_blank">
+                            <i class="fab fa-github"></i> Ver Código Fuente
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </section>
         <hr class="m-0" />
 
-        <!--    <hr class="m-0" /> -->
+        <div class=" position-fixed top-0 end-0 m-4" style="z-index: 1000;">
+            <a href="assets/doc/CV - Delmer Rodríguez - Sistemas.pdf" class="btn btn-primary btn-lg text-white"
+                role="button" style="position: fixed; top: 62px; right: 20px;">
+                <i class="fas fa-download text-white"></i> Descargar CV
+            </a>
+        </div>
 
-        <!-- Multimedia -->
-        <!-- <section class="resume-section" id="multimedia">
-
-            <div class="resume-section-content">
-                <h2 class="mb-5">Multimedia</h2>
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>¡Atención!</strong> Esta sección está en construcción.
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                <img src="assets/img/imagen-construccion.jpg" alt="En construcción" class="img-fluid">
-            </div>
-        </section>
-
-        <hr class="m-0" /> -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </div>
-
-    <div class="position-fixed top-0 end-0 m-4" style="z-index: 1000;">
-        <a href="assets/doc/CV - Delmer Rodríguez - Sistemas.pdf" class="btn btn-primary btn-lg text-white"
-            role="button" style="position: fixed; top: 62px; right: 20px;">
-            <i class="fas fa-download text-white"></i> Descargar CV
-        </a>
-    </div>
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>
